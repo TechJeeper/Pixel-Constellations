@@ -1,0 +1,76 @@
+{
+  "name": "pixel-constellations",
+  "author": "caffeinegamer",
+  "version": "1.0.0",
+  "keywords": [
+    "pebble-app",
+    "watchface",
+    "constellation",
+    "pixel",
+    "night-sky"
+  ],
+  "private": true,
+  "dependencies": {
+    "@rebble/clay": "^1.1.0"
+  },
+  "pebble": {
+    "displayName": "Pixel Constellations",
+    "uuid": "a7c3e91f-4b2d-4e68-9f15-8d6a2c0b4e17",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "emery",
+      "basalt",
+      "diorite",
+      "flint"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "capabilities": [
+      "configurable"
+    ],
+    "messageKeys": [
+      "TimeFormat",
+      "LeadingZero",
+      "ShowDate",
+      "ShowSeconds",
+      "ShowMoon",
+      "ShowNebula",
+      "ColorTheme",
+      "AnimSpeed",
+      "Twinkle",
+      "AmbientStars"
+    ],
+    "resources": {
+      "media": [
+        {
+          "type": "bitmap",
+          "name": "IMAGE_MENU_ICON",
+          "file": "images/menu_icon.png",
+          "menuIcon": true
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_STAR",
+          "file": "images/star.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_STAR_NODE",
+          "file": "images/star_node.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_MOON",
+          "file": "images/moon.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_NEBULA",
+          "file": "images/nebula.png"
+        }
+      ]
+    }
+  }
+}
